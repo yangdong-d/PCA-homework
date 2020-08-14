@@ -5,8 +5,7 @@
 
 ### 环境
 
-Python3
-航拍图像
+Python3、航拍图像
 
 ### 快速开始
 
@@ -44,3 +43,4 @@ python3 print_error.py
 
 ### 实验效果
 
+![avatar](https://test-34.su.bcebos.com/pca.jpg)
