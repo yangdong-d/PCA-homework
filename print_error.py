@@ -14,8 +14,6 @@ def print_error(rootDir, imagesDir, recDir, ori_list):
         pic1 = cv2.imread(path1)
         path2 = os.path.join(rootDir + recDir, ori_list[index])
         pic2 = cv2.imread(path2)
-        if index == 91:
-            continue
 
         for i in range(3):
             sum1 = 0
