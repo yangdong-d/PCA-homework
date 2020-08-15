@@ -47,4 +47,5 @@ python3 print_error.py
 
 ### 实验效果
 
-![loading.png](https://test-34.su.bcebos.com/pca.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/200)
+<img src="https://test-34.su.bcebos.com/pca.png" alt="图片替换文本" width="500" height="313" align="bottom" />
+
