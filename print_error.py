@@ -30,7 +30,7 @@ def print_error(rootDir, imagesDir, recDir, ori_list):
             error = sum2/sum1
             error_min = error if error < error_min else error_min
             error_max = error if error > error_max else error_max
-            error_avg = ((index * 3 + i) * error_avg + error) / (index * 3 + i + 1)
+            error_avg = ((index * 3 + i) * error_avg + error) / (index * 3 + i + 1) #更新当前均值
             print(error, error_min, error_max, error_avg)
         print("do ", index)
     print("all done!")
@@ -44,8 +44,7 @@ def print_compress(rootDir, imagesDir, recDir, ori_list):
     for index in range(0, len(ori_list)):
         path1 = os.path.join(rootDir + imagesDir, ori_list[index])
         path2 = os.path.join(rootDir + recDir, ori_list[index])
-        if index == 91:
-            continue
+        
         img1 = Image.open(path1)
         img2 = Image.open(path2)
         imgByteArr1 = io.BytesIO()
@@ -58,7 +57,7 @@ def print_compress(rootDir, imagesDir, recDir, ori_list):
 
         cmin = c if c < cmin else cmin
         cmax = c if c > cmax else cmax
-        cavg = (index * cavg + c) / (index + 1)
+        cavg = (index * cavg + c) / (index + 1) # 更新当前均值
 
         print(c, cmin, cmax, cavg, index)
         if c > 2:
@@ -71,5 +70,5 @@ if __name__ == '__main__':
     recDir = "/compressed/pca_k128"
     rootdir = os.getcwd()  #获取当前目
     ori_list = os.listdir(rootdir + imagesDir) #列出文件夹下所有的目录与文件
-    #print_error(rootdir, imagesDir, recDir, ori_list)
+    # print_error(rootdir, imagesDir, recDir, ori_list)
     print_compress(rootdir, imagesDir, recDir, ori_list)
