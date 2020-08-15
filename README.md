@@ -47,4 +47,4 @@ python3 print_error.py
 
 ### 实验效果
 
-![avatar](https://test-34.su.bcebos.com/pca.png)
+![loading.png](https://test-34.su.bcebos.com/pca.png/w/300)
