@@ -35,7 +35,7 @@ python3 print_error.py
 ### 目录结构
 ```text
 51194507017-杨东东-实践报告（图像压缩）
-├── 51194507017-杨东东-实践报告（图像压缩).docx    // 实践报告
+├── report.pdf                                     // 实践报告
 ├── compressed                                     // 压缩图像
 ├── imageset                                       // 原始图像
 ├── my_pca.py                                      // pca压缩
